@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Posofluluk testi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <style>
+        .newspaper {
+            -webkit-column-count: 2;
+            /* Chrome, Safari, Opera */
+            -moz-column-count: 2;
+            /* Firefox */
+            column-count: 2;
+        }
+
+        form {
+            background-image: url('https://i.imgur.com/1MWc9LJ.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.7);
+            background-blend-mode: lighten;
+        }
+    </style>
+    <p>
+        Bildiğiniz Posofça kelimeleri işaretleyin.
+    </p>
+    <br>
+    <p>
+        Toplam kelime sayısı: 314
+    </p>
+</head>
+
+<body>
+    <form class="newspaper">
+        <p>
+            <input type=checkbox>aba: babaanne,anneanne<br>
+            <input type=checkbox>abursuz: rezil<br>
+            <input type=checkbox>ağbun: gübre<br>
+            <input type=checkbox>agoz: sabanın açtığı i̇z<br>
+            <input type=checkbox>alaf: kışlık ot ,saman<br>
+            <input type=checkbox>alasa: köpek<br>
+            <input type=checkbox>andır: son,söz<br>
+            <input type=checkbox>andırın kalsın: sonun olsun<br>
+            <input type=checkbox>aruna: saban<br>
+            <input type=checkbox>atol: yerelması<br>
+            <input type=checkbox>avurt: yanak<br>
+            <input type=checkbox>baç etmek: öpmek<br>
+            <input type=checkbox>badi̇ye: geniş ağızlı taş<br>
+            <input type=checkbox>badlamak: tel örgüler veya çitlerin arasında kalan boşlukların kapatılması<br>
+            <input type=checkbox>badval: ambar<br>
+            <input type=checkbox>baga: ahırda hayvanların yeminin konduğu bölme<br>
+            <input type=checkbox>beç: saf,gerizekalı,düşüncesiz<br>
+            <input type=checkbox>berf: kar<br>
+            <input type=checkbox>beyabur: rezil<br>
+            <input type=checkbox>bididi: azıcık<br>
+            <input type=checkbox>bi̇jli̇: sivri<br>
+            <input type=checkbox>bi̇şka: kibrit<br>
+            <input type=checkbox>bi̇ti̇k: köpek yavrusu<br>
+            <input type=checkbox>buğari: baca<br>
+            <input type=checkbox>bujlanmak: uyuşmak<br>
+            <input type=checkbox>bulul: çapı ve yüksekliği 1,5 metre kadar olan ot yığını<br>
+            <input type=checkbox>buroy-buroy: bol bol<br>
+            <input type=checkbox>cadi: mısır unundan yapılan bir tür ekmek<br>
+            <input type=checkbox>cancur: erik<br>
+            <input type=checkbox>çatan: fındık dallarından örülmüş büyük sepet<br>
+            <input type=checkbox>cavlak: ayakta kurumuş ağaç, zayıf i̇nsan<br>
+            <input type=checkbox>cazikudiyan: şeytan<br>
+            <input type=checkbox>cecele: çok çeşitli renklerden oluşan<br>
+            <input type=checkbox>cel: ekinlerin yağmur yada rüzgarla eğilmesi<br>
+            <input type=checkbox>çemlemek: gömlek kolunu veya pantolon paçalarını katlamak<br>
+            <input type=checkbox>cemse: askeri araç konvoyu<br>
+            <input type=checkbox>çenci̇kleri̇n gevşedi̇: hoşuna gitme<br>
+            <input type=checkbox>çençlemek: lifli gıdaları tel tel ayırma<br>
+            <input type=checkbox>ci̇ce: büyük abla<br>
+            <input type=checkbox>çiçgol: kayın ağacından yapılan zincir<br>
+            <input type=checkbox>çiçi: et<br>
+            <input type=checkbox>ci̇ci̇p: ağız kenarında ve yüzde çıkan yaralar<br>
+            <input type=checkbox>ci̇cloba: arpacık<br>
+            <input type=checkbox>cilim: pim<br>
+            <input type=checkbox>cilip: ince,kısa kavak dalı<br>
+            <input type=checkbox>cillenmek: bitkilerin yeşermesi<br>
+            <input type=checkbox>cinav: bir tür bitki<br>
+            <input type=checkbox>cincar: ısırgan otu<br>
+            <input type=checkbox>cindal: kedi yavrusu<br>
+            <input type=checkbox>ciripinlenmek: ince ve yüksek bir sesle ısrarlı şekilde ağlamak<br>
+            <input type=checkbox>çirmak: yırtmak<br>
+            <input type=checkbox>çi̇rtakoz: deli<br>
+            <input type=checkbox>cizlavet: siyah lastik ayakkabı<br>
+            <input type=checkbox>cığla: karasaban<br>
+            <input type=checkbox>çırağ etmek: becerememek<br>
+            <input type=checkbox>coc: bataklık zemin<br>
+            <input type=checkbox>cucuget: cehennemin en derin yeri<br>
+            <input type=checkbox>cucul: civciv<br>
+            <input type=checkbox>cuncuğo: pis su<br>
+            <input type=checkbox>curiyal etmek: karıncalanmak<br>
+            <input type=checkbox>dada: efendi,ağa,adam,bey<br>
+            <input type=checkbox>dada: çocuk maması<br>
+            <input type=checkbox>dak: dirsek<br>
+            <input type=checkbox>demal: bir tür yabani erik<br>
+            <input type=checkbox>derekap: derhal<br>
+            <input type=checkbox>dilo: keten çuval<br>
+            <input type=checkbox>dinaza: alay etme<br>
+            <input type=checkbox>dolça: maşrafa<br>
+            <input type=checkbox>doydoy: güvercin<br>
+            <input type=checkbox>dütüle: zurna<br>
+            <input type=checkbox>egirşah: iğ ucuna takılan yuvarlak,ortası delik tahta<br>
+            <input type=checkbox>endeze olmak: oyalanmak<br>
+            <input type=checkbox>erfene: eğlence<br>
+            <input type=checkbox>esgil: kuşburnu<br>
+            <input type=checkbox>fanti̇: i̇skambil<br>
+            <input type=checkbox>ferik: büyük civciv<br>
+            <input type=checkbox>fesetli: patatesli hamur işi<br>
+            <input type=checkbox>feşğun: tahtadan yapılmış daire biçimindeki sofra<br>
+            <input type=checkbox>fizzahlanmak: ağlamak<br>
+            <input type=checkbox>furğun: öküz arabası<br>
+            <input type=checkbox>furuç: kurutulmuş panta<br>
+            <input type=checkbox>ğacapur: hamurun içine tuluğ peynirinin konması ile yapılan ekmek<br>
+            <input type=checkbox>gagal: göz<br>
+            <input type=checkbox>gaka: şeker<br>
+            <input type=checkbox>gakuça: gelincik çiçeği<br>
+            <input type=checkbox>gal: tasma<br>
+            <input type=checkbox>galak: tezek yığını<br>
+            <input type=checkbox>galamak: yakmak<br>
+            <input type=checkbox>ğalo: geniş yapraklı bir tür bitki,efelek<br>
+            <input type=checkbox>ganayağli: ihtiyar<br>
+            <input type=checkbox>ganfet: akide şekeri<br>
+            <input type=checkbox>garaban: köy evinin girişi<br>
+            <input type=checkbox>garavul: bekçi<br>
+            <input type=checkbox>garo: ambar<br>
+            <input type=checkbox>gaso: mısırunundan yapılan yemek<br>
+            <input type=checkbox>ğataklamak: kovma,uzaklaştırma<br>
+            <input type=checkbox>gav: çengel<br>
+            <input type=checkbox>gavçe: su kovalarını taşımada kullanılan ve omuzda taşınan ağaç parçası<br>
+            <input type=checkbox>geco: ense<br>
+            <input type=checkbox>geg burunlu: hızma burunlu<br>
+            <input type=checkbox>ğeplemek: kazımak<br>
+            <input type=checkbox>ğerzal: fındık fidanlarından örülmüş sepet<br>
+            <input type=checkbox>geşlenmek: donmak,üşümek<br>
+            <input type=checkbox>gıdi̇k: oğlak<br>
+            <input type=checkbox>gidil: küçük<br>
+            <input type=checkbox>gigil yüzlü: yüz yapısı küçük olan kimseler için söylenir<br>
+            <input type=checkbox>gignap: alıç<br>
+            <input type=checkbox>gijgirmak: yoğurdun ekşimesi<br>
+            <input type=checkbox>giji̇k: kıvırcık saç<br>
+            <input type=checkbox>gijo: kozalak<br>
+            <input type=checkbox>ğinkal: posof un etli mantısı<br>
+            <input type=checkbox>ğığıtlamak: boğmak,doldurmak,boğazını kesmek<br>
+            <input type=checkbox>ğımi: sapı yenilen bir bitki<br>
+            <input type=checkbox>ğıraklanma: yemeğin veya tencerenin altının yanması<br>
+            <input type=checkbox>ğıram: uçurum<br>
+            <input type=checkbox>goda: büyük zar<br>
+            <input type=checkbox>godet: süpürge sapı<br>
+            <input type=checkbox>golaba: ağaçtan yapılmış yoğurt kapı<br>
+            <input type=checkbox>gompez: meyva ağaçlarında bulunan tatlı reçine<br>
+            <input type=checkbox>goppal: büyük burun<br>
+            <input type=checkbox>gorcola: tuzsuz,yağsız süzme peynir<br>
+            <input type=checkbox>goruğçu: kır bekçisi<br>
+            <input type=checkbox>ğoryet: çirkin<br>
+            <input type=checkbox>goti̇k: manda yavrusu<br>
+            <input type=checkbox>göze: mereğe saman dökülen yer<br>
+            <input type=checkbox>gozo: biçimsiz odun<br>
+            <input type=checkbox>ğriyancola: sapı yenen bir bitki<br>
+            <input type=checkbox>guğun: ağlama<br>
+            <input type=checkbox>guli: hindi<br>
+            <input type=checkbox>ğulik: kertenkele<br>
+            <input type=checkbox>gullep: menteşe<br>
+            <input type=checkbox>gunçul: uç<br>
+            <input type=checkbox>guruğ tavuk: anaç tavuk<br>
+            <input type=checkbox>guşgana: tencere<br>
+            <input type=checkbox>guzgi: ayna<br>
+            <input type=checkbox>guzuk: kambur<br>
+            <input type=checkbox>hacillenmek: mahcup olmak,utanmak<br>
+            <input type=checkbox>hal: saman dökmeye yarayan geniş kürek<br>
+            <input type=checkbox>harmutlamak: suyu ılıtmak<br>
+            <input type=checkbox>haro: ambar içindeki bölme<br>
+            <input type=checkbox>haros: nadasa bırakılmış tarla<br>
+            <input type=checkbox>hasıl: elastik,esnek<br>
+            <input type=checkbox>hedik: haşlanmış mısır<br>
+            <input type=checkbox>helek olmak: çok yorulmak<br>
+            <input type=checkbox>helhel: havai kimse<br>
+            <input type=checkbox>hem çiçi-hem pepe: haketmediği halde fazlasını isteme(hem et-hem ekmek)<br>
+            <input type=checkbox>herg: sürülmüş tarla<br>
+            <input type=checkbox>herzal: tekerleksiz el arabası<br>
+            <input type=checkbox>hingilim atmak: gereksiz hareket ve işler<br>
+            <input type=checkbox>hoçora: bebekler için ağaçtan yapılan ilk adım arabası<br>
+            <input type=checkbox>hotak: çift sürene yardımıcı olan çocuk<br>
+            <input type=checkbox>hozan: biçilmiş ekinin toprakta kalan kısmı<br>
+            <input type=checkbox>iskam: tabure<br>
+            <input type=checkbox>i̇şkap: dolap<br>
+            <input type=checkbox>istikan: bardak<br>
+            <input type=checkbox>istol: sandalye<br>
+            <input type=checkbox>jola: ahududu<br>
+            <input type=checkbox>jujun: tatlı kaşıntı<br>
+            <input type=checkbox>kaçkaç: saksağan<br>
+            <input type=checkbox>kaj: gözleri yeşil olan<br>
+            <input type=checkbox>kakaç: zayıf kimseler için söylenir<br>
+            <input type=checkbox>kakaçlanma: donma,hareketsiz kalma,üşüme<br>
+            <input type=checkbox>kalağ: tezek yığını<br>
+            <input type=checkbox>kanfet: şeker<br>
+            <input type=checkbox>karapan: tahtadan yapılmış kulübe<br>
+            <input type=checkbox>karaynanda morinen: Allah kahretsin,keşke olmasaydı<br>
+            <input type=checkbox>kartopi: patates<br>
+            <input type=checkbox>kaşka: at arabası<br>
+            <input type=checkbox>kavçal: uzun çene<br>
+            <input type=checkbox>kefterküski: ot ve sap taşımak için kullanılan iki çam dalı<br>
+            <input type=checkbox>kerma: koyun tezeği<br>
+            <input type=checkbox>keroba: ilkbahar<br>
+            <input type=checkbox>kersan: derin hamur leğeni<br>
+            <input type=checkbox>kikil: pileki üstünde pişirilen küçük pağaça<br>
+            <input type=checkbox>kınap: küçük ip<br>
+            <input type=checkbox>kırtıl: çok kısa veya sert ot<br>
+            <input type=checkbox>kıtıl-kıtmır: küçük<br>
+            <input type=checkbox>kocat: küçük<br>
+            <input type=checkbox>kojoj: küçük tümsek<br>
+            <input type=checkbox>koko: bere<br>
+            <input type=checkbox>kokolo: yer ismi<br>
+            <input type=checkbox>komba dönmek: takla atmak<br>
+            <input type=checkbox>koplanmak: şişmek<br>
+            <input type=checkbox>kor: kör<br>
+            <input type=checkbox>kor araba: kağnı<br>
+            <input type=checkbox>korberevi: niye görmüyorsun<br>
+            <input type=checkbox>koşkokola: dolu(yağışı)<br>
+            <input type=checkbox>kotete: tabure<br>
+            <input type=checkbox>közmek: sanaskalın başındaki küçük pencere<br>
+            <input type=checkbox>kudiyan: şeytan<br>
+            <input type=checkbox>külül: yabani bezelye<br>
+            <input type=checkbox>kuni: küçük köpek<br>
+            <input type=checkbox>küski: bulul taşımada kullanılan 4-5 metrelik kalın ağaçlar<br>
+            <input type=checkbox>lapatka: kürek<br>
+            <input type=checkbox>lazut: mısır<br>
+            <input type=checkbox>leg: bir tür ağaç<br>
+            <input type=checkbox>leyakil düşmek: yorgun düşmek<br>
+            <input type=checkbox>lobbaz: i̇şe yaramaz aylak<br>
+            <input type=checkbox>lobiya: fasülye<br>
+            <input type=checkbox>loda: büyük ot yığını<br>
+            <input type=checkbox>lök: büyük<br>
+            <input type=checkbox>loko: iri yapılı<br>
+            <input type=checkbox>cunacuna: bir bitki türü<br>
+            <input type=checkbox>makval: böğürtlen<br>
+            <input type=checkbox>maluk: Boyunduruk ile kağnı arasında bağlantıyı yapan deri kayış pimi<br>
+            <input type=checkbox>maran: kağnı tekeri<br>
+            <input type=checkbox>mazi: iki tekerlek arasındaki ağaç<br>
+            <input type=checkbox>meçeç: siğil<br>
+            <input type=checkbox>merek: ot-saman saklanan yer<br>
+            <input type=checkbox>morbet: yardımcı,çırak<br>
+            <input type=checkbox>mosi: yaban mersini<br>
+            <input type=checkbox>motot: sümük<br>
+            <input type=checkbox>mozer: bir yaşındaki dana<br>
+            <input type=checkbox>mozi̇k: dananın büyüğü<br>
+            <input type=checkbox>muçurlamak: buruşturmak<br>
+            <input type=checkbox>mürgülemek: uyumak<br>
+            <input type=checkbox>muruslarini dökme: suratını asma<br>
+            <input type=checkbox>nağır: hayvan sürüsü<br>
+            <input type=checkbox>nagot/nugot: küçük odun parçaları<br>
+            <input type=checkbox>nağuco: iyice kavrulmuş kuyruk yağı parçaları<br>
+            <input type=checkbox>naliye çatanı: içinde eşya taşınan büyük sepet<br>
+            <input type=checkbox>ni̇gart: tavuğun gagası<br>
+            <input type=checkbox>oğcur: lastik<br>
+            <input type=checkbox>pağıllanmak: mahcup olmak,utanmak<br>
+            <input type=checkbox>pampara: bir tür bitki<br>
+            <input type=checkbox>panta: yabani armut,ahlat (pantanın altındaki tarlayi kaç dekar yazdın?)<br>
+            <input type=checkbox>papa: mısır unu ve sarıyağdan yapılan bir tür lapa<br>
+            <input type=checkbox>papağa kaçmak: bir hedefe gider gibi koşmak,düğünlerde atlıların papağı almak için yaptığı yarış<br>
+            <input type=checkbox>papaşlanmak: rahat bir yere oturup,oraya kurulmak<br>
+            <input type=checkbox>parduç: fırın paspası<br>
+            <input type=checkbox>patğa: tilki penceresini kapatan tahta<br>
+            <input type=checkbox>peg: yıkılmış ev kalıntısı<br>
+            <input type=checkbox>pegolmak: yok olmak<br>
+            <input type=checkbox>pellük: ayaktaşı oyunu<br>
+            <input type=checkbox>pepe: ekmek<br>
+            <input type=checkbox>peşğun: sofra<br>
+            <input type=checkbox>peşkir: havlu<br>
+            <input type=checkbox>pidik: köpek<br>
+            <input type=checkbox>pilaç: plastik yazlık ayakkabı<br>
+            <input type=checkbox>pileki: ateşte ekmek pişirmek için kullanılan yuvarlak bir çift tuğla<br>
+            <input type=checkbox>pızıga tutulmak: birşeyden kaçarcasına aniden koşmaya başlamak<br>
+            <input type=checkbox>pızık: bir tür sinek<br>
+            <input type=checkbox>poci̇lemek: baltayı taşa vurma<br>
+            <input type=checkbox>polim: oyun<br>
+            <input type=checkbox>pörçük: tırpanı sapına bağlayan yeri<br>
+            <input type=checkbox>puc: tunç<br>
+            <input type=checkbox>puç: eritilmiş arı mumu<br>
+            <input type=checkbox>puçi: buzağı<br>
+            <input type=checkbox>pulul: ot yığını<br>
+            <input type=checkbox>punturuş: bir tür ekmek<br>
+            <input type=checkbox>purşuk: un ve peynirden yapılan bir tür çorba<br>
+            <input type=checkbox>puş: karın<br>
+            <input type=checkbox>puşukana: mantar a benzeyen bir bitki<br>
+            <input type=checkbox>sako: kolsuz ceket<br>
+            <input type=checkbox>sako: sakar<br>
+            <input type=checkbox>sambak: samileri birbirine bağlayan ip<br>
+            <input type=checkbox>sami: boyunduruğa takılan ince ağaç<br>
+            <input type=checkbox>sanasgal: ahırların ortasındaki yerden düşük yerleşimli pislik kanalı<br>
+            <input type=checkbox>sansalak: ağaçtan yapılan patika köprü<br>
+            <input type=checkbox>seçretel: desenli raspa<br>
+            <input type=checkbox>sehlük: saf<br>
+            <input type=checkbox>sekü: divan<br>
+            <input type=checkbox>seküli ters: huysuz<br>
+            <input type=checkbox>sel: kağnıdan büyük,ön tarafı kızaklı taşıma aracı<br>
+            <input type=checkbox>siga: küçük kar kızağı<br>
+            <input type=checkbox>şilpipine: ağzına kadar dolmuş<br>
+            <input type=checkbox>şi̇nel: palto<br>
+            <input type=checkbox>şırat: peynir suyu<br>
+            <input type=checkbox>şoğurt: salya<br>
+            <input type=checkbox>şöhe: siyah boncuk<br>
+            <input type=checkbox>söki: sedir<br>
+            <input type=checkbox>soko: mantar<br>
+            <input type=checkbox>şoşartmak: abartma<br>
+            <input type=checkbox>sosiya: siyah kuş<br>
+            <input type=checkbox>şüşi̇t: huni<br>
+            <input type=checkbox>şuşlamak: buhara maruz bırakıp yumuşatmak<br>
+            <input type=checkbox>tapul, pulul: ot demeti<br>
+            <input type=checkbox>tar: tavukların kümeste üzerine çıktıkları yer<br>
+            <input type=checkbox>tara çıkmak: haketmediği yere oturmak<br>
+            <input type=checkbox>tat: çorabın taban kısmı<br>
+            <input type=checkbox>tejgere: hayvan pisliklerinin taşınmasında kullanılan dört kollu tahtadan yapılmış alet<br>
+            <input type=checkbox>tellük: yünlü takke<br>
+            <input type=checkbox>tepir: tahılın taşını ayırmak için kullanılan ağaçtan yapılmış tepsi<br>
+            <input type=checkbox>terek: raf<br>
+            <input type=checkbox>termaşa kalsın: başkalarına kalsın<br>
+            <input type=checkbox>teşt: saç leğen<br>
+            <input type=checkbox>tevür: çeşit<br>
+            <input type=checkbox>tiğ: saman, ekin karışımı yığın<br>
+            <input type=checkbox>toğayi̇rlenme: kendinden geçme<br>
+            <input type=checkbox>toklu: erkek kuzu<br>
+            <input type=checkbox>torhola: kabuk tutmamış yumurta<br>
+            <input type=checkbox>tuman: paçaları lastikli don<br>
+            <input type=checkbox>tump: farklı seviyelerdeki iki tarla sınırı arasındaki eğimli bölüm<br>
+            <input type=checkbox>tusmak: sinmek<br>
+            <input type=checkbox>tütün: hane (pedobanı saydım tam yirmiyeddi tütün)<br>
+            <input type=checkbox>üstüklü: kağnı<br>
+            <input type=checkbox>vedra: kova<br>
+            <input type=checkbox>veran kalasın: viran olasın,çaresiz kalasın (veran kalacağ, vurdide dananın bacağını kırdi)<br>
+            <input type=checkbox>yaşi̇k: ağaçtan yapılan kasa<br>
+            <input type=checkbox>yegi̇n: çalışkan titiz<br>
+            <input type=checkbox>yekti̇: yetim<br>
+            <input type=checkbox>yüngül: hafif<br>
+            <input type=checkbox>zabun: fakir<br>
+            <input type=checkbox>zağ: keskin, sivri<br>
+            <input type=checkbox>zangal: tabansız uzun çorap<br>
+            <input type=checkbox>zeda: tarlanın sürülmemiş tarafı<br>
+            <input type=checkbox>zeşt: sac<br>
+            <input type=checkbox>zirza: asmalı kilit<br>
+            <input type=checkbox>zığlığa: küçük kağnı<br>
+            <input type=checkbox>zıngalak: zayıf,cansız<br>
+            <input type=checkbox>zubun: Yakasız, uzun kollu erkek gömleği<br>
+            <input type=checkbox>zug: kambur (çuval çok ağırdı nerdeyse zugum çıktı)<br>
+            <input type=checkbox>zug olmak: yük olmak (ben de sene zug oliyerim ama needem)<br>
+            <input type=checkbox>zurgana: eğri, büğrü vücutlu<br>
+        </p>
+    </form>
+    <br>
+    <div class="known"></div>
+    <div class="percent"></div>
+    <script>
+        var countChecked = function() {
+            var n = $("input:checked").length;
+            $(".known").text("Bilinen kelime sayısı: " + n);
+            $(".percent").text("Posofluluk oranı: % " + Math.round(n / 314 * 100));
+        };
+        countChecked();
+
+        $("input[type=checkbox]").on("click", countChecked);
+    </script>
+</body>
+
+</html>
